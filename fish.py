@@ -102,6 +102,26 @@ def draw_rocks(rock, line):
     # Draw rock line
     stdscr.addstr(line, 0, rock, curses.color_pair(9))
 
+def init_weeds():
+    weeds = [randint(10, width-10) for i in range(int(width/30))]
+    return weeds
+
+def draw_weeds(weeds, i):
+    for weed in weeds:
+        draw_weed(weed, i)
+
+def draw_weed(x, i):
+    try:
+        b = int(i/20)%2==1
+        for i in range(3, 8):
+            if b:
+                stdscr.addstr(height-i, x, "(( ", curses.color_pair(2))
+            else:
+                stdscr.addstr(height-i, x, " ))", curses.color_pair(2))
+            b = not b
+    except E:
+        pass
+
 def main():
     curses.noecho()
     curses.curs_set(False)
@@ -121,9 +141,15 @@ def main():
 
     fishes = [Fish() for i in range(int(width*height / 150))]
 
+    weeds = init_weeds()
+
     rocks = [init_rocks() for i in range(3)]
 
+    i = 0
     while True:
+        draw_weeds(weeds, i)
+        i+=1
+
         # Draw rocks (pink at bottom)
         draw_rocks(rocks[0], height-1)
         draw_rocks(rocks[1], height-2)
