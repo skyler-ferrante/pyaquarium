@@ -1,6 +1,6 @@
 # Pyaquarium:
 
-An aquarium written in python uses curses. Meant to emulate old-timey screensavers
+An aquarium written in python using curses. Meant to emulate old-timey screensavers
 
 Demo: `ssh fish@sshfish.com`
 
