@@ -1,7 +1,17 @@
 # Pyaquarium:
 
-An aquarium written in python using curses. Meant to emulate old-timey screensavers
+An aquarium written in python. Meant to emulate old-timey screensavers.
 
-Demo: `ssh fish@sshfish.com`
+Live demo: `ssh fish@sshfish.com`
 
-![image](https://github.com/skyler-ferrante/pyaquarium/assets/24577503/32aede3c-b781-49f1-a43d-8a040459831a)
+![Fish](https://github.com/skyler-ferrante/pyaquarium/assets/24577503/447c97c1-1a6d-4989-a12d-66eb8bb4d5fb)
+
+To run:
+```
+git clone https://github.com/your-username/pyaquarium.git
+python3 fish.py
+```
+
+## Acknowledgments
+
+PyAquarium was inspired by [fish](https://github.com/lericson/fish), and relies upon the curses library.
