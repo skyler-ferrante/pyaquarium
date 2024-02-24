@@ -8,7 +8,7 @@ Live demo: `ssh fish@sshfish.com`
 
 To run:
 ```
-git clone https://github.com/your-username/pyaquarium.git
+git clone https://github.com/skyler-ferrante/pyaquarium.git
 python3 fish.py
 ```
 
